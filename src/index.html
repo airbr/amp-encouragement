@@ -25,7 +25,7 @@
       }
 
       body {
-        background: whitesmoke;
+        background: white;
       }
 
       .lightbox {
@@ -39,12 +39,17 @@
         color: white;
       }
 
-      h3, .lightboxContent {
+      .lightboxContent {
         text-align: center;
         width: 70%;
       }
 
+      h1 {
+        text-align: center;
+      }
+
       .lightboxBtnContainer {
+        height: 85vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -75,28 +80,37 @@
         border-bottom: var(--checkBorderWidth) solid var(--checkBorderColor);
         border-right: var(--checkBorderWidth) solid var(--checkBorderColor);
       }
+
+      .footer {
+        font-size: 10px;
+        text-align: center;
+        text-decoration: none;
+      }
   </style>
   </head>
   <body>
+
+    <div class="content">
+    
     <amp-lightbox id="my-lightbox" layout="nodisplay">
-      <div class="lightbox" on="tap:my-lightbox.close,secondPrompt.show" role="button" tabindex="0">
+      <div class="lightbox" on="tap:my-lightbox.close,secondPrompt.show,firstPrompt.hide" role="button" tabindex="0">
         <div class="lightboxContent">
           <div class="check"></div>
           <h1>I believe in you!</h1>
         </div>
       </div>
     </amp-lightbox>
-    <div class="lightboxBtnContainer">
+    <div id="firstPrompt" class="lightboxBtnContainer">
         <button class="lightboxBtn" on="tap:my-lightbox">
           Will you succeed?
         </button>
     </div>
 
     <amp-lightbox id="my-lightbox2" layout="nodisplay">
-      <div class="lightbox" on="tap:my-lightbox2.close,finalPrompt.show" role="button" tabindex="0">
+      <div class="lightbox" on="tap:my-lightbox2.close,secondPrompt.hide,finalPrompt.show" role="button" tabindex="0">
         <div class="lightboxContent">
           <div class="check"></div>
-          <h1>Yes!, very sure</h1>
+          <h1>Yes! very sure</h1>
         </div>
       </div>
     </amp-lightbox>
@@ -116,10 +130,10 @@
     >
     </amp-img>
 
-    <h1>Go forth my friend!</h1>
+    <h1>You rock! Go get 'em</h1>
+    <footer class="footer"><a href="https://github.com/airbr"><h2>by airbr</h2></a></footer>
      
     </div>
-
-
+  </div>
   </body>
 </html>
