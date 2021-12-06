@@ -180,7 +180,7 @@
       <amp-lightbox id="my-lightbox" layout="nodisplay">
         <div
           class="lightbox"
-          on="tap:my-lightbox.close,secondPrompt.show,firstPrompt.hide"
+          on="tap:my-lightbox.close,firstPrompt.hide,secondPrompt.show"
           role="button"
           tabindex="0"
         >
@@ -198,7 +198,7 @@
       <amp-lightbox id="my-lightbox2" layout="nodisplay">
         <div
           class="lightbox"
-          on="tap:my-lightbox2.close,secondPrompt.hide,finalPrompt.show"
+          on="tap:my-lightbox2.close,secondPrompt.hide,thirdPrompt.show"
           role="button"
           tabindex="0"
         >
@@ -211,6 +211,25 @@
       <div hidden id="secondPrompt" class="lightboxBtnContainer">
         <button class="lightboxBtn" on="tap:my-lightbox2">
           Aw shucks, really?
+        </button>
+      </div>
+
+      <amp-lightbox id="my-lightbox3" layout="nodisplay">
+        <div
+          class="lightbox"
+          on="tap:my-lightbox3.close,thirdPrompt.hide,finalPrompt.show"
+          role="button"
+          tabindex="0"
+        >
+          <div class="lightboxContent">
+            <div class="check"></div>
+            <h1>No doubt</h1>
+          </div>
+        </div>
+      </amp-lightbox>
+      <div hidden id="thirdPrompt" class="lightboxBtnContainer">
+        <button class="lightboxBtn" on="tap:my-lightbox3">
+          Really really?!
         </button>
       </div>
 
@@ -228,10 +247,10 @@
         </p>
         <h1>You rock! Go get 'em (Or other success message here)</h1>
         <footer class="footer">
-          <a href="https://github.com/airbr"><h2>by airbr</h2> </a>
-
           <a href="./story.html"
-            ><h2>a web story about the airbridge and how I got this domain</h2>
+            ><h1>
+              1. Web Story about the airbridge and why I got this domain...
+            </h1>
           </a>
         </footer>
       </div>
@@ -239,7 +258,8 @@
 
     <a style="text-align: center" href="https://github.com/airbr">
       <h5>
-        An excuse to learn some AMP @ https://github.com/airbr/amp-encouragement
+        2. An excuse to learn some AMP @
+        https://github.com/airbr/amp-encouragement
       </h5>
     </a>
   </body>
