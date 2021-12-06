@@ -130,6 +130,13 @@
         text-decoration: none;
         display: inline-block;
         font-size: 32px;
+        cursor: pointer;
+      }
+
+      .lightboxBtn:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
       }
 
       /* TODO: reduce specificity */
@@ -155,6 +162,17 @@
       .smImg {
         max-width: 338px;
       }
+
+      .box {
+        box-shadow: 0 12px 48px 0 rgb(0 0 0 / 70%);
+      }
+
+      .box:hover {
+        transition: 0.4s;
+        background: #4caf50;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0 / 90%);
+        border: 1px solid #ffa000;
+      }
     </style>
   </head>
   <body>
@@ -173,7 +191,7 @@
         </div>
       </amp-lightbox>
       <div id="firstPrompt" class="lightboxBtnContainer">
-        <button class="lightboxBtn" on="tap:my-lightbox">
+        <button class="box lightboxBtn" on="tap:my-lightbox">
           How is it going 😄?
         </button>
       </div>
@@ -212,15 +230,17 @@
         <footer class="footer">
           <a href="https://github.com/airbr"><h2>by airbr</h2> </a>
 
-          <a href="./story.html"><h2>a web story about the airbridge</h2> </a>
+          <a href="./story.html"
+            ><h2>a web story about the airbridge and how I got this domain</h2>
+          </a>
         </footer>
       </div>
     </div>
 
-    <a style="text-align: center" href="https://github.com/airbr"
-      ><h3>
+    <a style="text-align: center" href="https://github.com/airbr">
+      <h5>
         An excuse to learn some AMP @ https://github.com/airbr/amp-encouragement
-      </h3></a
-    >
+      </h5>
+    </a>
   </body>
 </html>
