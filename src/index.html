@@ -101,6 +101,8 @@
         align-items: center;
         justify-content: center;
         color: white;
+        cursor: pointer;
+
       }
 
       .lightboxContent {
@@ -173,6 +175,21 @@
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0 / 90%);
         border: 1px solid #ffa000;
       }
+
+      .innerButton {
+        font-size: 32px;
+        border-radius: 8px;
+        background: white;
+        color: black;
+        cursor: pointer;
+        padding: 15px;
+      }
+
+      .innerButton:hover {
+        transition: 0.1s;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0 / 90%);
+        border: 3px solid #ffa000;
+      }
     </style>
   </head>
   <body>
@@ -186,7 +203,9 @@
         >
           <div class="lightboxContent">
             <div class="check"></div>
-            <h1>I believe in you!</h1>
+            <br>
+            <br>
+            <button class="innerButton">I believe in you!</button>
           </div>
         </div>
       </amp-lightbox>
@@ -204,7 +223,9 @@
         >
           <div class="lightboxContent">
             <div class="check"></div>
-            <h1>Yes! very sure</h1>
+            <br>
+            <br>
+            <button class="innerButton">Yes very sure!</button>
           </div>
         </div>
       </amp-lightbox>
@@ -223,7 +244,9 @@
         >
           <div class="lightboxContent">
             <div class="check"></div>
-            <h1>No doubt</h1>
+            <br>
+            <br>
+            <button class="innerButton">No Doubt!</button>
           </div>
         </div>
       </amp-lightbox>

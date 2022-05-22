@@ -1,1 +1,1 @@
-### [An AMP page and a Web Story about the airbridge](https://airbridge.ac.nz)
+### [I really wanted to make a website to cheer up someones day. So I made this.](https://airbridge.ac.nz)
