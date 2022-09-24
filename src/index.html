@@ -190,6 +190,10 @@
         box-shadow: 0 4px 12px 0 rgba(0, 0, 0 / 90%);
         border: 3px solid #ffa000;
       }
+
+      .lightboxBtnContainer {
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
@@ -209,9 +213,9 @@
           </div>
         </div>
       </amp-lightbox>
-      <div id="firstPrompt" class="lightboxBtnContainer">
-        <button class="box lightboxBtn" on="tap:my-lightbox">
-          Morgan is going on holiday... click for an amazing high powered interactive web experience!
+      <div id="firstPrompt" on="tap:my-lightbox" class="lightboxBtnContainer">
+        <button class="box lightboxBtn">
+          Going on holiday... click for an amazing high powered interactive web experience!
         </button>
       </div>
       <amp-lightbox id="my-lightbox2" layout="nodisplay">
@@ -229,8 +233,8 @@
           </div>
         </div>
       </amp-lightbox>
-      <div hidden id="secondPrompt" class="lightboxBtnContainer">
-        <button class="lightboxBtn" on="tap:my-lightbox2">
+      <div hidden id="secondPrompt" on="tap:my-lightbox2" class="lightboxBtnContainer">
+        <button class="lightboxBtn">
           Just my other homeland...
         </button>
       </div>
@@ -250,13 +254,14 @@
           </div>
         </div>
       </amp-lightbox>
-      <div hidden id="thirdPrompt" class="lightboxBtnContainer">
-        <button class="lightboxBtn" on="tap:my-lightbox3">
+      <div hidden id="thirdPrompt" on="tap:my-lightbox3" class="lightboxBtnContainer">
+        <button class="lightboxBtn">
           Really really?!
         </button>
       </div>
 
       <div hidden id="finalPrompt">
+        <a href="https://en.wikipedia.org/wiki/New_Zealand">
         <p style="text-align: center">
           <amp-img
             class="smImg"
@@ -268,7 +273,8 @@
           >
           </amp-img>
         </p>
-        <h1>Those flights that got cancelled in 2020... it is time to make up for lost time!</h1>
+        </a>
+        <h1>Redeeming those flights that got cancelled in 2020... it is time to make up for lost time!</h1>
         <h1>Can't wait to be in Aotearoa New Zealand</h1>
         <footer class="footer">
           <a href="./story.html"
